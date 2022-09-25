@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You Book</title>
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="stylesheet" href="./assets/css/boostrap/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container-fluid d-flex justify-content-center align-items-center">
+    <div class="card border-dark">
+      <div class="card-header">
+        You Book
+      </div>
+      <div class="card-body text-dark">
+        <div class="mb-3 mt-3">
+          <input type="text" class="form-control token-ipt" placeholder="Token" />
+        </div>
+
+        <div class="mb-3 mt-3 d-flex flex-row justify-content-center align-items-center">
+          <div class="me-2 w-50">
+            <select class="form-select stadium-options stadium-select" aria-label="Default select example">
+              <option selected>Stadium</option>
+            </select>
+          </div>
+          <div class="ms-2 w-50">
+            <select class="form-select time-options time-select" aria-label="Default select example">
+              <option selected>Time</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="mb-3 mt-3 d-flex flex-row justify-content-center align-items-center">
+          <div class="mr-2 w-25">
+            <input type="text" class="form-control hour-ipt" placeholder="Hour" />
+          </div>
+          <div class="ms-2 mr-2 w-25">
+            <input type="text" class="form-control min-ipt" placeholder="Min" />
+          </div>
+          <div class="ms-2 mr-2 w-25">
+            <input type="text" class="form-control sec-ipt" placeholder="Sec" />
+          </div>
+          <div class="ms-2 mr-2 w-25">
+            <input type="text" class="form-control millisec-ipt" placeholder="Millisec" />
+          </div>
+
+        </div>
+        <div class="mb-3 mt-3">
+          <button type="button" class="btn btn-dark w-100 ok-btn">OK</button>
+        </div>
+        <div class="mb-3 mt-3">
+          <div class="display p-3 fs-5"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+* {
+  user-select: none;
+}
+
+.container-fluid {
+  background: #ecf0f1;
+  height: 100%;
+}
+
+.card {
+  width: 40rem;
+}
+
+.display {
+  background: #ecf0f1;
+  height: 20rem;
+  width: 100%;
+  user-select: text;
+}
+
+.w-45 {
+  width: 45%;
+}

@@ -1,0 +1,4 @@
+{
+  "book_url" : "http://localhost:8888/book",
+  "info_url" : "http://localhost:8888/getPriLogs"
+}

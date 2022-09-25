@@ -1,0 +1,51 @@
+#!/bin/bash
+targets=("main" "test")
+build_dir="./build"
+
+usage_warning(){
+  echo "use example: ./build.sh { module | test } [target]"
+  echo "avaliable targets:"
+  for target in ${targets[@]}
+  do
+    echo "  $target"
+  done
+}
+
+make_module() {
+  for target in ${targets[@]}
+  do
+    if [ $target = $2 ]
+    then
+      cmake --build $build_dir --target $target
+    fi
+  done
+  usage_warning
+  exit
+}
+
+make_test() {
+  for target in ${targets[@]}
+  do
+    if [ $target = $2 ]
+    then
+      cmake --build $build_dir --target $target
+    fi
+  done
+  usage_warning
+  exit
+}
+
+if [[ $# != 2 ]]
+then
+  usage_warning
+  exit
+fi
+
+if [ $1 = "test" ]
+then
+  make_test
+  exit
+elif [ $1 = "module" ]
+  make_module
+then
+fi
